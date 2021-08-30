@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="{% static 'site/js/test.js' %}"></script>
+    <script src="{% static 'site/jquery-3.6.0.js '%}"></script>
+    <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+    <script src="{% static 'site/js/chart.js' %}"></script>
+    <title>Document</title>
+</head>
+<body>
+    <form action="POST">
+        {% csrf_token %}
+        <button type="button" class="enableEthereumButton">Connect</button>
+    </form>
+    <form action="GET">
+        {% csrf_token %}
+        <h2>chart here</h2>
+    </form>
+   
+
+    
+    <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+    <script src="{% static 'site/js/chart.js' %}"></script>
+    <script src="{% static 'site/js/test.js' %}"></script>   
+    <script src="{% static 'site/jquery-3.6.0.js '%}"></script> 
+</body>
+</html>

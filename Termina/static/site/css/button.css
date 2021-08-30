@@ -1,0 +1,37 @@
+@font-face {
+    font-family:SVN-Gilroy-Regular;
+    src: url(../font/SVN-Gilroy-Regular.otf);
+  }
+ .wrapper {
+	 /* padding: 50px; */
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 flex-flow: wrap;
+	 height: 50px;
+     align-content: center;
+}
+.join-us-button {
+	 flex: 1;
+	 padding: 25px 50px;
+	 margin-bottom: 25px;
+	 border-radius: 999px;
+	 border: 2px solid #659aff;
+	 font-family: 'SVN-Gilroy-Regular', monospace;
+	 font-size: 20px;
+	 text-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+	 white-space: nowrap;
+	 color: #fff;
+	 background: transparent;
+	 background-image: url(https://web.archive.org/web/20160312084140im_/http://splatoon.nintendo.com/assets/img/nav-bg-fill-blue.png?1443460871);
+	 background-repeat: repeat-x;
+	 background-position: 0 -100%;
+	 transition: 2s ease;
+}
+.join-us-button:hover {
+	 background-position: 500% 100%;
+}
+
+.join-us-button:nth-child(17) {
+	 filter: hue-rotate(340deg);
+}

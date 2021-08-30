@@ -1,0 +1,285 @@
+{% load static  %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="{% static 'site/font/SVN-Gilroy Regular.otf' %}" rel="stylesheet"/>
+   <link href="{% static 'site/font/SVN-Gilroy SemiBold.otf' %}" rel="stylesheet"/>
+   <link href="{% static 'site/font/SVN-Gilroy Medium.otf' %}" rel="stylesheet"/>
+   <link rel="stylesheet" href="{% static 'site/css/index.css' %}">
+   <link rel="stylesheet" href="{% static 'site/bootstrap-5.0.2-dist/css/bootstrap-grid.min.css' %}">
+   <link rel="stylesheet" href="{% static 'site/bootstrap-5.0.2-dist/css/bootstrap.min.css' %}">
+   <link rel="stylesheet" href="{% static 'site/css/button.css' %}">
+   <link rel="stylesheet" href="{% static 'site/css/full-page-scroll.css' %}">
+   <!-- Script -->
+   <script src="{% static 'site/js/wallet.js' %}"></script>
+   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+   <script src="{% static 'site/js/full-page-scroll.js' %}"></script>
+   <script src="{% static 'site/js/page-scroll.js' %}"></script>
+   <script src="{% static 'site/js/index.js' %}"></script>
+   <script src="{% static 'site/bootstrap-5.0.2-dist/js/bootstrap.min.js' %}"></script>
+   <script src="{% static 'site/jquery-3.6.0.js' %}"></script>
+   <script src="{% static 'site/bootstrap-5.0.2-dist/js/bootstrap.bundle.js' %}"></script>
+   <title>Termina</title>
+</head>
+<body>
+<div id="main" class="scroll-container">
+    <section class="section1">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg" id="mainNav">
+            <a class="navbar-brand" href="{% url 'index' %}" id="brand">Termina</a>
+              <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                  <ul class="navbar-nav ">
+                      <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About</a></li>
+                      <li class="nav-item"><a class="nav-link" href="{% url 'market' %}">Market</a></li>
+                      <li class="nav-item"><a class="nav-link" href="{% url 'raise-capital' %}">Raise Capital</a></li>
+                      <li class="nav-item"><a class="nav-link" href="{% url 'developer' %}">Developers</a></li>
+                      <li class="nav-item"><a class="nav-link" href="{% url 'ecosystem' %}">Ecosystem</a></li>
+                      <!-- <button type="button" class="btn btn-outline-primary">Connect</button> -->
+                  </ul>
+                </div>
+                    <button type="button " class="btn btn-outline-primary fixbutton enableEthereumButton">Connect</button>
+        </nav>
+      </div>
+      <div class="container px-4 px-lg-5 h-100">
+        <div class="row align-items-left justify-content-left">
+          <div class="col-lg-5 mt-5">
+            <div class="dark-light-icon">
+              <img src="{% static 'site/assets/img/sun.png' %}" alt="Turn on light mode" id="light-mode">
+                <img src="{% static 'site/assets/img/moon.png' %}" alt="Turn on dark mode" id ="dark-mode">
+           <!-- <img src="{% static '/assets/img/Saly-10.png" alt="" class="sally"> -->
+            </div>
+            <!-- Content -->
+              <div class="">
+                <h1 class="text-white font-bold" >DeFi in the Metaverse</h1>
+                <p class="text-white-75 pb-3">All in one : Other cryptocurrencies usable in the Metaverse </p>
+                <p class="text-white-75 pb-3">What if you could Yeild Farming in the virtual world?</p>   
+              </div>
+                          <!-- Join Us button -->
+              <div>
+                <button class="wrapper join-us-button">Buy $TMA</button>                          
+              </div>                         
+              <!-- Contact icon -->
+              <div class = "contact">
+                  <a href="https://www.facebook.com/vuchinguyen2001/"><img src="{% static 'site/assets/img/facebook.png' %}" alt=""></a>
+                  <a href=""><img src="{% static 'site/assets/img/instagram.png' %}" alt=""></a>
+                  <a href=""><img src="{% static 'site/assets/img/twitter.png' %}" alt=""></a>
+                  <a href=""><img src="{% static 'site/assets/img/github.png' %}" alt=""></a>
+                  <a href=""><img src="{% static 'site/assets/img/linkedin.png' %}" alt=""></a>
+                  
+              </div>
+        </div>
+            <div class="col-lg-7">
+              <img src="{% static 'site/assets/img/Saly-10.png' %}" alt="" class="sally">
+              <div class="aligh-item-center end-wg col-lg-5">
+              <div id="coinmarketcap-widget-marquee" coins="1,7224,8766" currency="USD" theme="dark" transparent="false" show-symbol-logo="true"></div>
+              </div>  
+              <!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+              <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_ADqq0Z.json"  background="transparent"  speed="1"  style="width: 35%; height: 35%; position: absolute; bottom: -170px; justify-items: center ; align-items: center;"  loop autoplay></lottie-player>                          -->
+            </div>   
+      </div>
+    
+    </div>
+                  
+          </section>
+          <section class="section2">
+            <div class="container mt-5">
+              <div class="align-items-center justify-content-center display-flex">
+                  <h1 class="text-white font-bold">We're the new genneration of DeFi</h1>
+              </div>
+          <div class ="row ">
+              <div class="col-lg-4 fix-space">
+                  <p class="text-white-75 mb-3">More banks will likely let customers buy and sell cryptocurrency soon</p>
+                  <p class="text-white-75 mb-3">Termina is an open-source software development company building tools, products, and services for the decentralized finance (DeFi) ecosystem.</p>
+                  <!-- <div class = "contact">
+                      <a href="https://www.facebook.com/thanhtra1910"><img src="{% static '/assets/img/facebook.png" alt=""></a>
+                      <a href=""><img src="{% static '/assets/img/instagram.png" alt=""></a>
+                      <a href=""><img src="{% static '/assets/img/twitter.png" alt=""></a>
+                      <a href=""><img src="{% static '/assets/img/github.png" alt=""></a>
+                      <a href=""><img src="{% static '/assets/img/linkedin.png" alt=""></a>
+                      <a href=""><img src="{% static '/assets/img/send.png" alt=""></a>
+                      <a href=""><img src="{% static '/assets/img/globe.png" alt=""></a>
+                  </div>
+                  <div class="mt-5">
+                      <img src="{% static '/assets/img/sun.png" alt="Turn on light mode" id="light-mode">
+                      <img src="{% static '/assets/img/moon.png" alt="Turn on dark mode" id ="dark-mode">
+                  </div> -->
+              </div>
+        
+              <div class="col-lg-4">
+                  <img src="{% static 'site/assets/img/about-pic.png' %}" alt="" class="about-pic">
+              </div>
+              <div class="col-lg-4 marginTop">
+                  <p>DeFi in the Metaverse ushers in a new era where all service resources are peer-to-peer secured by smart coins. </p> 
+                  <p>To avoid being dominated by a single currency of the platform. $TMA will have controls in place to operate.</p>
+              </div>                
+              </div>
+          </div>
+          </section>
+          <section class="section3">
+            <div class="container">
+              <div class="justify-content-center aligh-item-center">
+                <h3 class="font-bold text-center">We're trying to test interoperability between platforms.</h3>
+                <h3 class="font-bold text-center"> In the near future, virtual reality becomes very popular. </h3>
+                <h3 class="font-bold text-center">Interaction between platforms is inevitable.</h3>
+              </div>
+              <div class="justify-content-center aligh-item-center">
+                <img src="{% static 'site/assets/img/Group 159.png' %}" alt="" class="img-group159">
+              </div>
+              
+              
+            </div>
+          </section>
+          <section class="section4">
+            <div class="container ">
+                 <div class="row " >
+                   <div class="col-sm-4 img-gr-fix">
+                     <img src="{% static 'site/assets/img/Group 144.png' %}" alt="" >
+                   </div>
+                   <div class="col-4 img-gr-fix">
+                     <img src="{% static 'site/assets/img/Group 147.png' %}" alt="" >
+                   </div>
+                   <div class="col-4 img-gr-fix">
+                     <img src="{% static 'site/assets/img/Group 148.png' %}" alt="" >
+                   </div>
+                 </div>
+                 <div class="text-center mt-50px">
+                    <h2 class="font-bold ">Create valuable items to reward players.</h2>
+                    <h2 class="font-bold "> Advertisers will identify trends in reaching users in the Metaverse</h2>
+                    <h4  class="mt-50px">Simple and safe cryptocurrency management and payment service.</h4>
+                    <h4 class=""> An open source and non-custodial liquidity protocol for earning interest on deposits and borrowing assets.</h4>
+                 </div>
+            </div>
+          </section>
+          <section class="section5">
+            <div class="container">
+              <div>
+                <h2 class="font-bold text-center text-color-main-color">ROADMAP</h2>
+              </div>
+              
+              <div class="row">
+                <div class="arrow"></div>
+                <div class="col-lg-3 roadmap">
+                  <img src="{% static 'site/assets/img/Group 171.png' %}" alt="" class="roadmap-Q">
+                  <div class="ml-35px mt-100px">
+                    <h5>LAUCHING</h5>
+                    <i class='far fa-check-square square-icon'><span class="font-SVN">Lauching website</span></i>
+                    <i class='far fa-check-square square-icon'><span class="font-SVN">Prepare whitepaper</span></i>
+                    <i class='far fa-square square-icon '><span class="font-SVN">ICO</span></i>
+                    <i class='far fa-square square-icon'><span class="font-SVN">Private sale</span></i>
+                    <i class='far fa-square square-icon'><span class="font-SVN">Pre-sale</span></i>
+                    <i class='far fa-square square-icon'><span class="font-SVN">PancakeSwap Listing</span></i>
+                    <i class='far fa-square square-icon'><span class="font-SVN">Github Update</span></i>
+                    <i class='far fa-check-square square-icon'><span class="font-SVN">Update $TMA Tokenomics</span></i>
+                  </div>
+                 
+                </div>
+                <div class="col-lg-3 roadmap">
+                  <img src="{% static 'site/assets/img/Group 170.png' %}" alt="" class="roadmap-Q" >
+                  <div class="ml-35px mt-100px">
+                    <h5>LISTING</h5>
+                    <i class='far fa-square square-icon'><span class="font-SVN">CoinMarketCap Listing</span></i>
+                    <i class='far fa-square square-icon'><span class="font-SVN">CoinGecko Listing</span></i>
+                    <i class='far fa-square square-icon'><span class="font-SVN">Coincodex Listing</span></i>
+                    <i class='far fa-square square-icon'><span class="font-SVN">Coinpaprika Listing</span></i>
+                  </div>
+                 
+                </div>
+                <div class="col-lg-3 roadmap">
+                  <img src="{% static 'site/assets/img/Group 169.png' %}" alt="" class="roadmap-Q" >
+                  <div class="ml-35px mt-100px">
+                    <h5>MARKETING</h5>
+                    <i class='far fa-square square-icon'><span class="font-SVN">Medium Campaign</span></i>
+                    <i class='far fa-square square-icon'><span class="font-SVN">Airdrops</span></i>
+                    
+                  </div>
+                </div>
+                <div class="col-lg-3 roadmap">
+                  <img src="{% static 'site/assets/img/Group 168.png' %}" alt="" class="roadmap-Q" >
+                  <div class="ml-35px mt-100px">
+                    <h5>TESTING</h5>
+                    <i class='far fa-square square-icon'><span class="font-SVN">...</span></i>
+                    
+                   
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-5">
+                <div class="col-3"><img src="{% static 'site/assets/img/coinmarketcap.com.png' %}" alt="" style="height: 30px;width: 200px;"></div>
+                <div class="col-3"><img src="{% static 'site/assets/img/coingecko.com.png' %}" alt="" style="height: 30px; width: 140px;"></div>
+                <div class="col-3"><img src="{% static 'site/assets/img/Transak.png' %}" alt="" style="height: 35px; width: 140px;"></div>
+                <div class="col-3"><img src="{% static 'site/assets/img/nomics.png' %}" alt="" style="height: 35px; width: 140px;"></div>
+              </div>
+            </div>
+
+          </section>
+          <section class="section6">
+            <div class="container">
+              <h2 class="font-bold text-center text-color-main-color">TOKENOMICS</h2>
+              <div class="row">
+                <div class="col-6">
+                  <img src="{% static 'site/assets/img/chart-1.png' %}" alt=""  class="chart1">
+                  <p class="text-center">ININTIAL TOKEN</p>
+                </div>
+                <div class="col-6">
+                  <img src="{% static 'site/assets/img/chart-2.png' %}" alt="" class="chart2">
+                  <p class="text-center">ALLOCATION TOKEN</p>
+                </div>
+              </div>
+            </div>
+            
+          </section>
+          <section class="section7">
+            <div class="container">
+              <img src="{% static 'site/assets/img/Saly-31.png ' %}" alt="" class="end-pic">
+              <h3 class="text-center">For the community, by the community</h3>
+            </div>
+              <div class="row aligh-item-center justify-content-center footer">
+                <div class="col-4 text-center footer-text" >
+                  <p>Termina.finance</p>
+                </div>
+                <div class="col-4 text-center footer-text" >
+                  <p>Copyright © 2021 TMA finance</p>
+                </div>
+                <div class="col-4 text-center footer-text" >
+                  <p>Blockchain Explorer</p>
+                </div>
+              </div>
+            
+             
+           
+            
+
+          </section>
+        </div>
+       <!-- Footer-->
+    
+    <!-- Bootstrap core JS-->
+    
+   <!-- Footer-->
+    
+    <!-- Bootstrap core JS-->
+    
+    <link rel="stylesheet" href="{% static 'site/css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'site/css/full-page-scroll.css' %}">
+
+    <script src="{% static 'site/js/full-page-scroll.js' %}"></script>
+    <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script>
+    <script src="{% static 'site/js/page-scroll.js' %}"></script>
+    <script src="{% static 'site/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js' %}"></script>
+    <!-- SimpleLightbox plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="{% static 'site/js/wallet.js' %}"></script>
+    <script src="{% static 'site/jquery-3.6.0.js' %}"></script>
+    <script src="{% static 'site/js/index.js' %}"></script>
+   
+   
+    
+</body>
+</html>
+    {% endblock %}

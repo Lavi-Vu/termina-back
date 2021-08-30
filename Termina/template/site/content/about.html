@@ -1,0 +1,40 @@
+{% extends "site/layout/layout.html" %}
+{% load static  %}
+{% block content %}
+    
+    <div class="container mt-5">
+        <div class="align-items-center justify-content-center display-flex">
+            <h1 class="text-white font-weight-bold">We're the new genneration of DeFi</h1>
+        </div>
+    <div class ="row ">
+        <div class="col-lg-4 fix-space">
+            <p class="text-white-75 mb-3">More banks will likely let customers buy and sell cryptocurrency soon</p>
+            <p class="text-white-75 mb-3">Termina is an open-source software development company building tools, products, and services for the decentralized finance (DeFi) ecosystem.</p>
+            <div class = "contact">
+                <a href="{% static 'https://www.facebook.com/thanhtra1910' %}"><img src="{% static 'site/assets/img/facebook.png' %}" alt=""></a>
+                <a href=""><img src="{% static 'site/assets/img/instagram.png' %}" alt=""></a>
+                <a href=""><img src="{% static 'site/assets/img/twitter.png' %}" alt=""></a>
+                <a href=""><img src="{% static 'site/assets/img/github.png' %}" alt=""></a>
+                <a href=""><img src="{% static 'site/assets/img/linkedin.png' %}" alt=""></a>
+                <a href=""><img src="{% static 'site/assets/img/send.png' %}" alt=""></a>
+                <a href=""><img src="{% static 'site/assets/img/globe.png' %}" alt=""></a>
+            </div>
+            <div class="mt-5">
+                <img src="{% static 'site/assets/img/sun.png' %}" alt="Turn on light mode" id="light-mode">
+                <img src="{% static 'site/assets/img/moon.png' %}" alt="Turn on dark mode" id ="dark-mode">
+            </div>
+        </div>
+  
+        <div class="col-lg-4">
+            <img src="{% static 'site/assets/img/about-pic.png' %}" alt="" class="about-pic">
+        </div>
+        <div class="col-lg-4 marginTop">
+            <p>DeFi opens a new record resource all service resources are executed peer-to-peer secured by smart coins.</p> 
+            <p>Controls that previously required the effort of the financial system model in the system to build a logical system to operate.</p>
+        </div>
+        </div>
+    </div>
+    
+        
+               
+{% endblock %}

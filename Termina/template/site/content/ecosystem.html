@@ -1,0 +1,53 @@
+{% extends "site/layout/layout.html" %}
+{% load static %}
+{% block content %}
+<div class="container mt-5">
+    <div class="text-center">
+        <h3 class="font-bold">$TMA Ecosystem</h3>
+        <p>Explore apps and services use Termina</p>
+    </div>
+    
+
+    <div class="row">
+        <h4 class="text-center">Made by the comunity</h4>
+        <div class="line"></div>
+        <div class="col-3 mt-5">
+            <img src="{% static 'site/assets/img/pancakeswap.png' %}" alt="" class="icon-ecosystem"><span>PancakeSwap</span><br>
+            <img src="{% static 'site/assets/img/bakeryswap.png' %}" alt="" class="icon-ecosystem"><span>BakerySwap</span><br>
+            <img src="{% static 'site/assets/img/dodo.png' %}" alt="" class="icon-ecosystem"><span>DODO</span>
+        </div>
+        <div class="col-3 mt-5">
+            <img src="{% static 'site/assets/img/shiba.png' %}" alt="" class="icon-ecosystem"><span>ShibaSwap</span><br>
+            <img src="{% static 'site/assets/img/flooz.png' %}" alt="" class="icon-ecosystem"><span>Flooz.trade</span>
+        </div>
+        
+        <div class="col-3 mt-5">
+            <img src="{% static 'site/assets/img/trustwallet.png' %}" alt="" class="icon-ecosystem"><span>Trust Wallet</span><br>
+            <img src="{% static 'site/assets/img/metamask.png' %}" alt="" class="icon-ecosystem"><span>Metamask</span>
+        </div>
+        <div class="col-3 mt-5">
+            <img src="{% static 'site/assets/img/coin98.png' %}" alt="" class="icon-ecosystem"><span>Coin98 Wallet</span><br>
+            <img src="{% static 'site/assets/img/BCW.png' %}" alt="" class="icon-ecosystem"><span>Binance Chain Wallet</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-5">
+            <div class = "contact mt-100px">
+                <a href="https://www.facebook.com/vuchinguyen2001/"><img src="{% static 'site/assets/img/facebook.png' %}" alt=""></a>
+                <a href=""><img src="{% static 'site/assets/img/instagram.png' %}" alt=""></a>
+                <a href=""><img src="{% static 'site/assets/img/twitter.png' %}" alt=""></a>
+                <a href=""><img src="{% static 'site/assets/img/github.png' %}" alt=""></a>
+                <a href=""><img src="{% static 'site/assets/img/linkedin.png' %}" alt=""></a>
+                
+            </div>
+        </div>
+        <div class="col-7">
+            <div class="dark-light-icon mt-100px">
+            <img src="{% static 'site/assets/img/sun.png' %}" alt="Turn on light mode" id="light-mode">
+              <img src="{% static 'site/assets/img/moon.png' %}" alt="Turn on dark mode" id ="dark-mode">
+         <!-- <img src="{% static 'site/assets/img/Saly-10.png" alt="" class="sally"> -->
+          </div>
+        </div>
+    </div>
+</div>
+{% endblock%}
